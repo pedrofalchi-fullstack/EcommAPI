@@ -75,7 +75,7 @@ flowchart LR
     User -->|aprovação| Pending
     Pending -->|aplicar| Bling
 
-    Bling -->|webhook (Fase 3)| Future["🚀 fulfillment<br/>(futuro)"]
+    Bling -.->|webhook Fase 3| Future["🚀 fulfillment<br/>futuro"]
 ```
 
 **Princípios de arquitetura:**
