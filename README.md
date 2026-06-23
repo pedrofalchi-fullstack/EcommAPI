@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🛒 EcommAPI — Automação de E-commerce com Aprovação Humana
+# 🛒 EcommAPI — Gestão de estoque 24/7 e Automação de E-commerce com Aprovação Humana
 
 **Plataforma Python de automação para e-commerce** — sincroniza estoque entre o fornecedor e o ERP **Bling** em tempo real, propõe alterações de preço via **IA (Claude / Gemini)** sob revisão humana, e foi projetada para escalar até a automação completa de pedidos.
 
