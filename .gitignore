@@ -1,0 +1,57 @@
+# ───────────────────────────────────────────────
+#  Segredos — NUNCA commitar
+# ───────────────────────────────────────────────
+.env
+.env.*
+!.env.example
+bling_tokens.json
+*_tokens.json
+*.key
+*.pem
+secrets.json
+
+# ───────────────────────────────────────────────
+#  Dados operacionais locais
+# ───────────────────────────────────────────────
+pricing_rules.json
+!pricing_rules.example.json
+pending_changes.json
+*.db
+*.sqlite
+*.sqlite3
+state.db
+
+# ───────────────────────────────────────────────
+#  Python
+# ───────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+*.egg
+
+# ───────────────────────────────────────────────
+#  Logs
+# ───────────────────────────────────────────────
+*.log
+logs/
+
+# ───────────────────────────────────────────────
+#  Editores e SO
+# ───────────────────────────────────────────────
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

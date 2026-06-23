@@ -1,0 +1,47 @@
+{
+  "_descricao": "Exemplo de regras de precificação. Copie este arquivo para 'pricing_rules.json' e ajuste os valores conforme sua estratégia. NUNCA commite o pricing_rules.json real.",
+
+  "regras_globais": {
+    "markup_minimo_percentual": 30.0,
+    "markup_maximo_percentual": 150.0,
+    "margem_minima_aceitavel": 20.0,
+    "arredondamento": "psicologico",
+    "_comentario_arredondamento": "Opções: 'psicologico' (99 centavos), 'inteiro' (sem centavos), 'nenhum'"
+  },
+
+  "regras_por_categoria": {
+    "categoria_exemplo_a": {
+      "markup_percentual": 60.0,
+      "preco_minimo": 19.90,
+      "preco_maximo": 999.90
+    },
+    "categoria_exemplo_b": {
+      "markup_percentual": 45.0,
+      "preco_minimo": 9.90,
+      "preco_maximo": 499.90
+    }
+  },
+
+  "regras_por_marca": {
+    "marca_premium_exemplo": {
+      "markup_percentual": 80.0,
+      "_comentario": "Marcas premium suportam markup maior"
+    },
+    "marca_popular_exemplo": {
+      "markup_percentual": 35.0
+    }
+  },
+
+  "excecoes": {
+    "skus_ignorados": [
+      "SKU-EXEMPLO-001",
+      "SKU-EXEMPLO-002"
+    ],
+    "_comentario_skus_ignorados": "SKUs listados aqui não terão preço alterado automaticamente"
+  },
+
+  "aprovacao": {
+    "exigir_aprovacao_acima_de_percentual": 25.0,
+    "_comentario": "Alterações de preço maiores que esse percentual entram na fila de aprovação manual em pending_changes.json"
+  }
+}
